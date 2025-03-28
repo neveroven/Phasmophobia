@@ -1,0 +1,257 @@
+@font-face{
+    font-family: 'Phasmophobia';
+    src: url(fonts/october-crow.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    background-color: black;   
+}
+.lineborder{
+    width: 100%;
+}
+.lineborder1{
+    width: 100%;
+    display: block;  
+}
+body{
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(bg/camping.jpg);
+    background-attachment: fixed;
+}
+footer{
+    height: 150px;
+    background-color: black;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+.Pha{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-family: 'Phasmophobia' !important;
+}
+.name h1{
+    font-size: 30px;
+}
+.name img{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.name1 img{
+    width: 100px;
+    display: flex;
+}
+.name1{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 100px;
+    color: white;
+    justify-content: center;
+}
+.mainbook{
+    background-image: url(Imgs/ChiefBookpng.png);
+    width: 1285px;
+    height: 979px;
+    margin-bottom: 50px;
+}
+.links{
+     display: flex;
+     padding-top: 9px;  
+}
+.linksleft{
+    display: flex;
+    justify-content: space-around;
+    width: 41%;
+    gap: 20px;
+    margin-left: 100px;
+}
+.linksright{
+    display: flex;
+    justify-content: space-around;
+    width: 41%;
+    gap: 20px;
+    margin-left: 33px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    font-size: 28px;
+    font-weight: bold; 
+}
+.NavText{
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 160px;
+    margin-left: -1050px;
+    width: 100%;
+}
+.buttons{       
+    margin-left: -1170px;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.buttons a{
+    text-decoration: none; 
+    background-repeat: no-repeat;
+    color: black;
+    font-family: 'Phasmophobia' !important;  
+    font-weight: bold;
+    font-size: 45px;
+    width: fit-content;    
+    transition: 0.3s;
+}
+.button1{
+    background-image: url(Imgs/ButtonGhosts.png);
+    padding: 20px 150px;
+}
+.button1:hover{
+    transform: scale(1.09,1.09);
+}
+.button2{
+    margin-top: 30px;
+    margin-left: 70px;
+    background-image: url(Imgs/ButtonItems.png);
+    padding: 20px 100px;  
+}
+.button2:hover{
+    transform: scale(1.09,1.09);
+}
+.button3{
+    margin-top: 30px;
+    margin-left: 70px;
+    background-image: url(Imgs/ButtonLocations.png);
+    padding: 21px 64px; 
+}
+.button3:hover{
+    transform: scale(1.09,1.09);
+}
+.button4:hover{
+    transform: scale(1.09,1.09);
+}
+.button4{
+    margin-top: 30px;
+    margin-left: 53px;
+    background-image: url(Imgs/ButtonEvidence.png);
+    padding: 28px 98px;    
+}
+.button5:hover{
+    transform: scale(1.09,1.09);
+}
+.button5{
+    margin-top: 30px;
+    margin-left: 75px;
+    background-image: url(Imgs/ButtonAchivments.png);
+    padding: 21px 35px;   
+}
+.bookright{
+    width: 41%;
+    gap: 20px;
+    margin-left: 750px;
+}
+.buttonsandinfo{
+    display: flex;
+}
+.AboutGame7{
+    font-size: 40px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    margin-top: 10px;
+    margin-left: -80px;
+}
+.AboutGame8{
+    margin-top: 10px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.GameDis1{
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.GameDis2{
+    margin-top: 10px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.GameDis3{
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.GameDis4{
+    margin-top: 10px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.GameDis5{
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.GameDis6{
+    margin-top: 10px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Phasmophobia' !important;
+    width: 530px;
+    margin-left: -80px;
+}
+.Video1{
+    margin-top: 10px;
+    width: 360px;
+    height: 230px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.Video1:hover{
+    transform: scale(1.05,1.05);
+}
+
+
