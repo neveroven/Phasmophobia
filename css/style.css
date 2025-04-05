@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Phasmophobia';
-    src: url(fonts/october-crow.ttf);
+    src: url(../fonts/october-crow.ttf);
 }
 *{
     margin: 0;
@@ -23,7 +23,7 @@ body{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(bg/camping.jpg);
+    background-image: url(../Pix/bg/camping.jpg);
     background-attachment: fixed;
 }
 footer{
@@ -72,7 +72,7 @@ footer{
     justify-content: center;
 }
 .mainbook{
-    background-image: url(Imgs/ChiefBookpng.png);
+    background-image: url(../Pix/Imgs/ChiefBookpng.png);
     width: 1285px;
     height: 979px;
     margin-bottom: 50px;
@@ -129,7 +129,7 @@ footer{
     transition: 0.3s;
 }
 .button1{
-    background-image: url(Imgs/ButtonGhosts.png);
+    background-image: url(../Pix/Imgs/ButtonGhosts.png);
     padding: 20px 150px;
 }
 .button1:hover{
@@ -138,7 +138,7 @@ footer{
 .button2{
     margin-top: 30px;
     margin-left: 70px;
-    background-image: url(Imgs/ButtonItems.png);
+    background-image: url(../Pix/Imgs/ButtonItems.png);
     padding: 20px 100px;  
 }
 .button2:hover{
@@ -147,7 +147,7 @@ footer{
 .button3{
     margin-top: 30px;
     margin-left: 70px;
-    background-image: url(Imgs/ButtonLocations.png);
+    background-image: url(../Pix/Imgs/ButtonLocations.png);
     padding: 21px 64px; 
 }
 .button3:hover{
@@ -159,7 +159,7 @@ footer{
 .button4{
     margin-top: 30px;
     margin-left: 53px;
-    background-image: url(Imgs/ButtonEvidence.png);
+    background-image: url(../Pix/Imgs/ButtonEvidence.png);
     padding: 28px 98px;    
 }
 .button5:hover{
@@ -168,7 +168,7 @@ footer{
 .button5{
     margin-top: 30px;
     margin-left: 75px;
-    background-image: url(Imgs/ButtonAchivments.png);
+    background-image: url(../Pix/Imgs/ButtonAchivments.png);
     padding: 21px 35px;   
 }
 .bookright{
@@ -251,7 +251,7 @@ footer{
     transition: 0.3s;
 }
 .Video1:hover{
-    transform: scale(1.05,1.05);
+    transform: scale(1.03,1.03);
 }
 
 

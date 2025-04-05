@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Phasmophobia';
-    src: url(fonts/october-crow.ttf);
+    src: url(../fonts/october-crow.ttf);
 }
 *{
     margin: 0;
@@ -23,7 +23,7 @@ body{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(bg/camping.jpg);
+    background-image: url(../Pix/bg/camping.jpg);
     background-attachment: fixed;
 }
 footer{
@@ -72,7 +72,7 @@ footer{
     justify-content: center;
 }
 .mainbook{
-    background-image: url(Imgs/ChiefBookpng.png);
+    background-image: url(../Pix/Imgs/ChiefBookpng.png);
     width: 1285px;
     height: 979px;
     margin-bottom: 50px;
@@ -108,37 +108,89 @@ footer{
     font-weight: bold;
     font-size: 45px;
     margin-top: 160px;
-    margin-left: -1037px;
+    margin-left: -877px;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .bookright{
     width: 41%;
     gap: 20px;
-    margin-left: 750px;
+    margin-left: 660px;
 }
 .buttonsandinfo{
     display: flex;
 }
-.ChooseEv{
+.GhostsLR{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    
+}
+.GhostsLR button{
+    font-size: 30px;
+    font-family: 'Phasmophobia' !important;
+    background: none;
+    border: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+.GhostsLeft{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 200px;
+    margin-left: -1000px;
+}
+.GhostsRight{
+    gap: 20px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-}
-.ChooseEv button{
-    width: 300px;
-    font-family: 'Phasmophobia'!important;
-    background: none;
-    border: none;
-    font-size: 35px;
-    margin-left: -1110px;  
-    cursor: pointer; 
-}
-#ImgEvidence
-{
     width: 200px;
-    height: 200px;
+    margin-right: 700px;
 }
-
-
-
+#NameGhost{
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Phasmophobia' !important;
+    margin-bottom: 50px;
+    color: black;
+}
+#DisGhost{
+    font-size: 30px;
+    width: 110%;
+    font-family: 'Phasmophobia' !important;
+    margin-bottom: 40px;
+    color: black;
+}
+#StrengthGhost{
+    font-size: 30px;
+    width: 110%;
+    font-family: 'Phasmophobia' !important;
+    margin-bottom: 40px;
+    color: black;
+}
+#WeaknessGhost{
+    font-size: 30px;
+    width: 110%;
+    font-family: 'Phasmophobia' !important;
+    margin-bottom: 150px;
+    color: black;
+}
+#EvidenceGhost{
+    font-size: 30px;
+    width: 110%;
+    font-family: 'Phasmophobia' !important;
+    margin-bottom: 10px;
+    color: black;
+}
+#EvidenceList{
+    font-size: 30px;
+    width: 110%;  
+    list-style: none;
+    color: black;
+}
+#EvidenceList li{
+    font-family: 'Phasmophobia' !important;
+    margin-bottom: 10px;
+    color: black;
+}

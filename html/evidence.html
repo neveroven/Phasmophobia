@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evidence</title>
-    <link rel="stylesheet" href="evidence.css">
+    <link rel="stylesheet" href="../css/evidence.css">
 </head>
 <body>
     <header class="Header">
         <div class="name">
-            <a href="index.html"><img src="./Imgs/logo.jpg" alt=""></a>  
+            <a href="index.html"><img src="../Pix/Imgs/logo.jpg" alt=""></a>  
             <a class="Pha" href="index.html">Phasmophobia</a>                                                            
         </div>
-        <img class= "lineborder" src="./Imgs/lineheaderpng.png" alt="">
+        <img class= "lineborder" src="../Pix/Imgs/lineheaderpng.png" alt="">
     </header>
     <main class="main">
         <div class="mainbook">
@@ -30,11 +30,11 @@
             <div class="buttonsandinfo">
                 <div class="bookright">                       
                     <div>
-                        <p id="NameEvidence">Test</p>
-                        <p id="DisEvidence">Test test test</p>
-                        <p id="GhostsEvidence">Test1</p>
-                        <div>
-                            <img id="ImgEvidence" src="Imgs/logo.jpg" alt="">
+                        <p id="NameEvidence">Choose Evidence</p>
+                        <p id="DisEvidence">Evidence is used to determine which ghost is haunting the location. Each ghost has a unique combination of three pieces of evidence that determines which ghost is present. Each player can record pieces of evidence that has been uncovered in the Journal to thin down the possible ghosts, and determine the ghost once all three piece of evidence are collected.</p>
+                        <p id="GhostsEvidence"></p>
+                        <div class="Image-Container">
+                            <img id="ImgEvidence" src="../Pix/Imgs/logo.jpg" alt="">
                         </div>
                     </div>
                 </div>  
@@ -43,11 +43,11 @@
                     <div class="ChooseEv">
                         <button onclick="SelectEvidence(0)">EMF Level 5</button>
                         <button onclick="SelectEvidence(1)">Ultraviolet</button>
-                        <button>Ghost Writing</button>
-                        <button>Freezing Temperatures</button>
-                        <button>D.O.T.S Projector</button>
-                        <button>Ghost Orb</button>
-                        <button>Spirit Box</button>
+                        <button onclick="SelectEvidence(2)">Ghost Writing</button>
+                        <button onclick="SelectEvidence(3)">Freezing Temperatures</button>
+                        <button onclick="SelectEvidence(4)">D.O.T.S Projector</button>
+                        <button onclick="SelectEvidence(5)">Ghost Orb</button>
+                        <button onclick="SelectEvidence(6)">Spirit Box</button>
                     </div>                
                 </div>    
                     
@@ -55,13 +55,13 @@
                        
         </div>           
     </main>
-    <img class= "lineborder1" src="./Imgs/lineheaderpng1.png" alt="LineBorder">
+    <img class= "lineborder1" src="../Pix/Imgs/lineheaderpng1.png" alt="LineBorder">
     <footer class="Footer">
         <div class="name1">
-            <a href="index.html"><img src="Imgs/logo.jpg" alt="Logo"></a>                                                            
+            <a href="index.html"><img src="../Pix/Imgs/logo.jpg" alt="Logo"></a>                                                            
         </div>
     </footer>
-    <script src="evidencesript.js"></script>
+    <script src="../js/evidencesript.js"></script>
 </body>
 
 </html>
