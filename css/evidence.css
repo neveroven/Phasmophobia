@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Phasmophobia';
-    src: url(../fonts/october-crow.ttf);
+    src: url(/fonts/october-crow.ttf);
 }
 *{
     margin: 0;
@@ -23,7 +23,7 @@ body{
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(../Pix/bg/camping.jpg);
+    background-image: url(/Pix/bg/camping.jpg);
     background-attachment: fixed;
 }
 footer{
@@ -72,7 +72,7 @@ footer{
     justify-content: center;
 }
 .mainbook{
-    background-image: url(../Pix/Imgs/ChiefBookpng.png);
+    background-image: url(/Pix/Imgs/ChiefBookpng.png);
     width: 1285px;
     height: 979px;
     margin-bottom: 50px;

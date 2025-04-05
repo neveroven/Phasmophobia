@@ -1,9 +1,17 @@
-FROM nginx
-MAINTAINER  Oven
-RUN rm -rf /usr/share/nginx/html/*
-COPY ./*.* /usr/share/nginx/html
-COPY ./Achivments/* /usr/share/nginx/html/Achivments/
-COPY ./bg/* /usr/share/nginx/html/bg/
-COPY ./fonts/* /usr/share/nginx/html/fonts/
-COPY ./Imgs/* /usr/share/nginx/html/Imgs/
-COPY ./itemsimg/* /usr/share/nginx/html/itemmmsimg/
+FROM nginx:latest
+
+# Копируем конфигурацию Nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Копируем содержимое проекта
+COPY css /usr/share/nginx/html/css
+COPY fonts /usr/share/nginx/html/fonts
+COPY html /usr/share/nginx/html
+COPY js /usr/share/nginx/html/js
+COPY Pix /usr/share/nginx/html/Pix
+
+# Устанавливаем права доступа
+RUN chmod -R 755 /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
