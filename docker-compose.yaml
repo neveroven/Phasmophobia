@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   nginx:
-    image: doc1:v13 # Ваш локальный образ
+    image: doc1:v14 # Ваш локальный образ
     container_name: my-nginx-container
     ports:
       - "80:80"

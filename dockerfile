@@ -31,5 +31,5 @@ RUN cp /tmp/repo/*.html /usr/share/nginx/html/
 RUN chmod -R 755 /usr/share/nginx/html
 
 # Опубликовать порт и запустить Nginx
-EXPOSE 80
+EXPOSE 80 8080
 CMD ["nginx", "-g", "daemon off;"]
