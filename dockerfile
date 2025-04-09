@@ -19,7 +19,7 @@ RUN ls -l /tmp/repo
 
 # Копируем конфигурацию Nginx
 RUN cp /tmp/repo/nginx.conf /etc/nginx/conf.d/default.conf
-
+RUN cp /tmp/repo/stub_status.conf /etc/nginx/conf.d/stub_status.conf
 # Копируем содержимое проекта из склонированного репозитория
 RUN cp -r /tmp/repo/css /usr/share/nginx/html/
 RUN cp -r /tmp/repo/fonts /usr/share/nginx/html/
