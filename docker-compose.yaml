@@ -2,25 +2,19 @@ version: '3.8'
 
 services:
   nginx:
-    image: doc1:v14 # Ваш локальный образ
+    image: doc1:v15 # Ваш локальный образ
     container_name: my-nginx-container
     ports:
-      - "80:80"
-      - "8080:8080" # Порт для статуса Nginx
-    networks:
-      - monitoring
+      - "127.0.0.1:80:80"
+      - "127.0.0.1:8080:8080"
 
   nginx-exporter:
-    image: nginx/nginx-prometheus-exporter:latest # Официальный образ Nginx Exporter
+    image: nginx/nginx-prometheus-exporter:1.0.0 # Официальный образ Nginx Exporter
     container_name: nginx-exporter
+    command:
+      - --nginx.scrape-uri=http://nginx:8080/basic_status    
     ports:
       - "9113:9113" # Порт для метрик
-    environment:
-      - NGINX_SCRAPE_URI=http://192.168.0.122:8080/nginx_status
-    depends_on:
-      - nginx
-    networks:
-      - monitoring
 
   prometheus:
     image: prom/prometheus:latest # Официальный образ Prometheus
@@ -29,10 +23,6 @@ services:
       - "9090:9090" # Порт для Prometheus
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
-    depends_on:
-      - nginx-exporter
-    networks:
-      - monitoring
   grafana:
     image: grafana/grafana:latest # Официальный образ Grafana
     container_name: grafana
@@ -41,11 +31,3 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=admin # Имя администратора
       - GF_SECURITY_ADMIN_PASSWORD=admin # Пароль администратора
-    depends_on:
-      - prometheus
-    networks:
-      - monitoring
-
-networks:
-  monitoring:
-    driver: bridge
